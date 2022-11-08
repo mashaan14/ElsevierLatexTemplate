@@ -1,0 +1,242 @@
+%% 
+%% Copyright 2019-2021 Elsevier Ltd
+%% 
+%% This file is part of the 'CAS Bundle'.
+%% --------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'CAS Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+%% Template article for cas-dc documentclass for 
+%% double column output.
+
+\documentclass[a4paper,fleqn]{cas-dc}
+
+% If the frontmatter runs over more than one page
+% use the longmktitle option.
+
+%\documentclass[a4paper,fleqn,longmktitle]{cas-dc}
+
+\usepackage[numbers]{natbib}
+%\usepackage[authoryear]{natbib}
+%\usepackage[authoryear,longnamesfirst]{natbib}
+
+%%%Author macros
+\def\tsc#1{\csdef{#1}{\textsc{\lowercase{#1}}\xspace}}
+\tsc{WGM}
+\tsc{QE}
+%%%
+
+% Uncomment and use as if needed
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newdefinition{rmk}{Remark}
+%\newproof{pf}{Proof}
+%\newproof{pot}{Proof of Theorem \ref{thm}}
+
+\usepackage{graphicx,subcaption}
+\usepackage{xcolor}
+\usepackage[linesnumbered,lined,boxed,ruled]{algorithm2e}
+
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{systeme}
+
+%%% Coloring the comment in Algorithms as blue
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+%%% define kewords in Algorithms
+\SetKwInput{KwInput}{Input}                % Set the Input
+\SetKwInput{KwOutput}{Output}              % set the Output
+
+% remove error to use the H specifier so to force the algorithm environment not to float.
+\makeatletter
+\newcommand{\removelatexerror}{\let\@latex@error\@gobble}
+\makeatother
+
+\begin{document}
+\let\WriteBookmarks\relax
+\def\floatpagepagefraction{1}
+\def\textpagefraction{.001}
+
+% Short title
+\shorttitle{\LaTeX\ template}
+
+% Short author
+\shortauthors{author 1 et~al.}  
+
+% Main title of the paper
+\title [mode = title]{\LaTeX\ template}
+
+%% Title footnote mark
+%% eg: \tnotemark[1]
+%\tnotemark[<tnote number>] 
+%
+%% Title footnote 1.
+%% eg: \tnotetext[1]{Title footnote text}
+%\tnotetext[<tnote number>]{<tnote text>} 
+
+\author[1]{author 1}[
+orcid=0000-0000-0000-0000]
+\cormark[1]
+%\fnmark[1]
+\ead{abc@abc.edu}
+
+
+\address[1]{somewhere, planet earth}
+
+\author[2]{author 2}[]
+\ead{abc@abc.edu}
+
+\author[3]{author 3}[]
+\ead{abc@abc.edu}
+
+\author[2]{author 4}[]
+\ead{abc@abc.edu}
+
+\address[2]{somewhere, planet earth}
+\address[3]{somewhere, planet earth}
+
+
+% Corresponding author text
+\cortext[1]{Corresponding author}
+
+%% Footnote text
+%\fntext[1]{}
+
+% For a title note without a number/mark
+%\nonumnote{}
+
+% Here goes the abstract
+\begin{abstract}
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+	abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract
+\end{abstract}
+
+% Use if graphical abstract is present
+%\begin{graphicalabstract}
+%\includegraphics{}
+%\end{graphicalabstract}
+
+% Research highlights
+\begin{highlights}
+	\item highlight 1
+	\item highlight 2
+	\item highlight 3	
+\end{highlights}
+
+
+% Keywords
+% Each keyword is seperated by \sep
+\begin{keywords}
+keyword 1 \sep keyword 2 \sep keyword 3 \sep keyword 4
+\end{keywords}
+
+\maketitle
+
+
+\section{Introduction}
+\label{Introduction}
+
+Some introduction
+
+Some contributions:
+
+\begin{itemize}
+	\item contribution 1
+	\item contribution 2
+\end{itemize}
+
+
+\section{Related work}
+\label{RelatedWork}
+
+Some related work
+
+\subsection{Subsection}
+
+Some equations: 
+
+\begin{equation}
+	g_\theta * x = U g_\theta U^\top x ,
+	\label{Eq-001}
+\end{equation}
+
+
+\begin{equation}
+	T_k(x) = 2x T_{k-1}(x) - T_{k-2}(x),
+	\label{Eq-002}
+\end{equation}
+
+
+\section{Initializing GCNs using rpForests}
+\label{ProposedApproach}
+
+Some figure
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.48\textwidth,height=20cm,keepaspectratio]{rpTree.png}	
+	\caption{A $k$-nn graph with $k=3$; all edges were assigned equal weights even the ones connecting two different classes. (Best viewed in color)}
+	\label{Fig:graph-knn}
+\end{figure}
+
+
+
+\section{Experiments and discussions}
+\label{Experiments}
+
+Some experiments 
+
+
+\section{Conclusion}
+\label{Conclusion}
+
+Some conclusions
+
+
+%% Loading bibliography style file
+%\bibliographystyle{model1-num-names}
+\bibliographystyle{cas-model2-names}
+
+% Loading bibliography database
+\bibliography{mybibfile}
+
+% Biography
+%\bio{}
+%Dr. Mashaan holds a MSc in computer science from King Fahd University of Petroleum and Minerals (KFUPM), Saudi Arabia, and a PhD from the University of Sydney, Australia. His research interests lie broadly in graph clustering and deep representation learning.
+%\endbio
+%
+%\bio{}
+%Dr. John Stavrakakis has strong interests in 3D computer graphics, remote rendering and computer security. He holds a PhD in Computer science and is an academic fellow at the University of Sydney, Australia.
+%\endbio
+%
+%\bio{}
+%Dr. Adel F. Ahmed is an assistant professor at King Fahd University of Petroleum and Minerals. He received his PhD in computer science from the University of Sydney. His research interest includes Information Visualization and Machine Learning.
+%\endbio
+%
+%\bio{}
+%Dr. Masahiro Takatsuka received his MEng degree at Tokyo Institute of Technology in 1992, and received his PhD at the Monash University in 1997. In 1997-2002, he worked at GeoVISTA Center, The Pennsylvania State University as a senior research associate. He joined the School of Computer Science, the University of Sydney in 2002.
+%\endbio
+
+\end{document}
+
