@@ -2,7 +2,7 @@
 
 Page 1             |  Page 2
 :-------------------------:|:-------------------------:
-![](https://...Dark.png)  |  ![](https://...Ocean.png)
+![](https://github.com/mashaan14/ElsevierLatexTemplate/blob/main/Manuscript_Page_1.jpg)  |  ![](https://github.com/mashaan14/ElsevierLatexTemplate/blob/main/Manuscript_Page_2.jpg)
 
 Some Elsevier journals require uploading raw latex files to the editorial manager instead of a pdf. But editorial manager does not support subdirectories. And because of these dependencies, it will produce a pdf full of errors.
 
