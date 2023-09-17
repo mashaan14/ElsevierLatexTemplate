@@ -4,7 +4,7 @@ Page 1             |  Page 2
 :-------------------------:|:-------------------------:
 ![](https://github.com/mashaan14/ElsevierLatexTemplate/blob/main/Manuscript_Page_1.jpg)  |  ![](https://github.com/mashaan14/ElsevierLatexTemplate/blob/main/Manuscript_Page_2.jpg)
 
-<p float="left">
+<p align="middle">
   <img src="/Manuscript_Page_1.jpg" width="48%" />
   <img src="/Manuscript_Page_2.jpg" width="48%" /> 
 </p>
