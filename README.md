@@ -1,5 +1,5 @@
 # Elsevier LaTeX Template
-A LaTeX Template with double column based on `cas-dc.cls`.
+A LaTeX Template with double column based on `cas-dc.cls`
 
 <p align="middle">
   <img src="/Manuscript_Page_1.jpg" width="49%" />
