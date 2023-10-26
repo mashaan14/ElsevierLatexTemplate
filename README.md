@@ -7,7 +7,7 @@ A LaTeX Template with double column based on `cas-dc.cls`
 </p>
 
 ## Editorial Manager
-Some Elsevier journals require uploading raw latex files to the editorial manager instead of a pdf. But editorial manager does not support subdirectories. And because of these dependencies, it will produce a pdf full of errors. This repository contains the latex files for Elsevier journals. It does not have any subdirectories, so most of the errors are solved.
+Some Elsevier journals require uploading raw latex files to the editorial manager instead of a pdf. But editorial manager does not support subdirectories. Because of these dependencies, it will produce a pdf full of errors. This repository contains the latex files for Elsevier journals. It does not have any subdirectories, so most of the errors are solved.
 
 ## Tips to ensure a successful upload to Editorial Manager
 1.	Generate the `.pdf` on your machine
