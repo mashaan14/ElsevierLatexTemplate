@@ -1,4 +1,4 @@
-# Elsevier LaTeX Template
+# Elsevier `LaTeX` Template
 A LaTeX Template with double column based on `cas-dc.cls`
 
 <p align="middle">
