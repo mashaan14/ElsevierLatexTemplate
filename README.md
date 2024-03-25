@@ -18,8 +18,3 @@ Some Elsevier journals require uploading raw `latex` files to the editorial mana
 6.	Drag and drop the zip onto the Editorial Manager
 7.	Zip all other supported documents (e.g., response to reviewers and highlights)
 8.	Choose the right classification for the supported documents after being unzipped by Editorial Manager
-
-
-because submissions to Editorial Manager must:
-- not include any subfolders
-- have only one .tex file
